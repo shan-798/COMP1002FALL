@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PizzaDude Order Form</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaDude Order Form</title>
 </head>
+
 <body>
     <!--Header Element-->
     <header>
@@ -17,36 +19,104 @@
         <section>
             <h2>Order Here!</h2>
             <p>Ready to eat? First, fill out your information!</p>
-            
+
             <!--Customer Information-->
             <fieldset>
                 <legend>Personal Information</legend>
-           
-                        <div>
 
-                        <label for="fname">First Name: </labeL>
-                        <input type="text" name="fname" id="fname" />
+                <div>
 
-                       </div>
-                        <div>
+                    <label for="fname">First Name: </labeL>
+                    <input type="text" name="fname" id="fname" />
 
-                        <label for="lname">Last Name: </labeL>
-                        <input type="text" name="lname" id="lname" />
+                </div>
+                <div>
 
-                        </div>
-                        <div>
+                    <label for="lname">Last Name: </labeL>
+                    <input type="text" name="lname" id="lname" />
 
-                        <label for="address">Address Line 1</label>
-                        <input id="address" type="text" name="address" />
-                        
-                        </div>
-                        </fieldset>
-                <!--Order Details-->
-                <p>Now, confirm your order details.</p>
+                </div>
+                <div>
 
-                        
+                    <div>
+                        <label for="phone">Phone: </label>
+                        <input id="phone" type="tel" name="phone" />
+
+                    </div>
+
+                    <div>
+
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email" />
+
+                    </div>
+
+                    <label for="address">Address Line 1</label>
+                    <input id="address" type="text" name="address" />
+
+                </div>
+            </fieldset>
+            <!--Order Details-->
+            <p>Now, confirm your order details.</p>
+            <fieldset>
+                <legend>Order Details</legend>
+                <div>
+                    <label for="numPizzas">Number of pizzas:</label>
+                    <input type="number" id="numPizzas" name="numPizzas" min="1" max="10">
+                </div>
+                <div>
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small (6 Slices)</option>
+                        <option value="medium">Medium (12 Slices)</option>
+                        <option value="large">Large (18 Slices)</option>
+                        <option value="xlarge">Extra Large (24 Slices)</option>
+                </div>
+                </select>
+                <div>
+                    <label for="crust">Crust:</label>
+                    <select id="crust" name="crust">
+                        <option value="thin">Thin</option>
+                        <option value="regular">Regular</option>
+                        <option value="thick">Thick</option>
+                        <option value="ddish">Deep Dish</option>
+                        <option value="cheese">Thick Cheesy</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Toppings: </p>
+                    <input type="checkbox" name="toppings[]" id="topping1" value="pepperoni" />
+                    <label for="topping1">Pepperoni</label>
+                    <input type="checkbox" name="toppings[]" id="topping2" value="pepperoni" />
+                    <label for="topping2">Mushrooms</label>
+                    <input type="checkbox" name="toppings[]" id="topping3" value="pepperoni" />
+                    <label for="topping3">Onions</label>
+                    <input type="checkbox" name="toppings[]" id="topping4" value="pepperoni" />
+                    <label for="topping4">Bell Peppers</label>
+                </div>
+
+                <p>Order type: </p>
+                <input type="radio" name="order" id="dinein" value="dinein" />
+                <label for="dinin">Dine in</label>
+                <input type="radio" name="order" id="takeout" value="takeout" />
+                <label for="takeout">Takeout</label>
+                <input type="radio" name="order" id="delivery" value="delivery" />
+                <label for="delivery">Delivery</label>
+                <p>How would you like us to contact you?</p>
+                <input type="checkbox" name="alert[]" id="alert1" value="email" />
+                <label for="alert1">Email alert</label>
+                <input type="checkbox" name="alert[]" id="alert2" value="sms" />
+                <label for="alert2">SMS alert</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="notes">Special Notes: </label>
+                <textarea id="notes" name="notes" rows="3" cols="30"></textarea>
             </fieldset>
         </section>
     </main>
 </body>
+
 </html>
