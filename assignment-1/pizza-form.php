@@ -11,7 +11,13 @@
         <h1>Your order has been processed!</h1>
     </header>
     <main>
-        <p> Thank you for ordering, your pizza will be here shortly.
+<?php
+
+	$fname = $_GET["fname"];
+		echo('<p>Thank you, '.$fname.'! Your order will be here shortly.</p>');
+?>
+
+
 </main>
     <footer>
         <br>
