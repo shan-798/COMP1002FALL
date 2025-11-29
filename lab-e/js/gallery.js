@@ -3,7 +3,7 @@
 // STEP 1: Begin by adding a SCRIPT element to 'red/gallery.php' that refers to this EXTERNAL JavaScript File
 
 // STEP 2a: Grab the UL for #blockGallery and assign it to the variable 'blockGallery' - but use document.getElementById this time
-    const blockGallery = document.getElementById("#blockGallery");
+    const blockGallery = document.getElementById("blockGallery");
 
 // STEP 2b: Create an array called 'blockLinks' to contain all the A elements inside the above variable, 'blockGallery' - but use querySelectorAll instead of getElementsByTagName
 const blockLinks = blockGallery.querySelectorAll("a");
@@ -17,7 +17,7 @@ const blockLinks = blockGallery.querySelectorAll("a");
 // STEP 4a: For the link that was clicked, capture the value of the href attribute as a variable called 'blockHref'
         let blockHref = blockLinks[i].getAttribute("href");
 // STEP 4b: Grab the IMG element just below the UL containing the links to each of the block images with the appropriate ID (look at the HTML in 'red/gallery.php') and assign it to a variable of the same name - use document.getElementById below
-        const blockImage = document.getElementById("#blockImage");
+        const blockImage = document.getElementById("blockImage");
 // STEP 4c: Change the src attribute of the above IMG element (use the variable name) using the setAttribute method, using the above 'blockHref' variable
         blockImage.setAttribute("src", blockHref);
 // STEP 5a: Obtain the title attribute of the link clicked (referred to as 'this') and set it as the value for a new variable called 'blockCaption'
