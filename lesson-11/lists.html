@@ -10,7 +10,9 @@
 		/* STEP 5: Styling Lists (list-style-type, list-style-position, list-style-image) */
 		/* STEP 5a: list-style-type (none | square | circle | disc) */
 		ul {
-
+			/* list-style-type: square;
+			list-style-position: inside;
+			list-style-image: url("images/check.png") */
 		}
 		/* STEP 5b: Manipulate the list-style-position (inside | outside) in the rule above */
 		/* STEP 5c: Substitute regular list markers with images (list-style-image) in the rule just below */
@@ -19,21 +21,23 @@
 		}
 		/* STEP 5d: list-style-type (armenian | decimal | decimal-leading-zero | georgian | lower/upper-alpha | lower-greek | lower-latin | lower/upper-roman) - change in the rule below */
 		ol {
-			/* list-style-type: upper-latin; */
+			list-style-type: lower-greek;
 		}
 		/* STEP 6: Laying Out Lists horizontally - use display: inline-block or inline */
 		li {
-
+				/* display: inline-block */
 		}
 		/* STEP 7: Targetting nested lists with contextual selectors - comment out all above declarations first */
 		ul ul {
-
+			background-color: gray;
 		}
 		ul ul ul {
-
+			background-color: lightgray;
 		}
 		/* STEP 8: Target specific levels of list items with direct-descendent selectors */
-
+		main > ul > li > ul > li {
+			font-weight: bold;
+		}
 		h1 img {
 			float: right;
 		}
@@ -49,15 +53,62 @@
 	<main>
 		<!-- STEP 1: Build a simple Unordered List -->
 		<h2>Unordered List</h2>
+		<ul>
+			<li>milk</li>
+			<li>eggs</li>
+			<li>sugar</li>
+			<li>flour</li>
+			<li>baking soda</li>
+		</ul>
 
 		<!-- STEP 2: Build a simple Ordered List -->
 		<h2>Ordered List</h2>
+		<ol>
+			<li>Beat the eggs in a mixing bowl</li>
+			<li>Add Milk</li>
+			<li>Add sugar, flour, and baking soda</li>
+			<li>mix ingredients</li>
+			<li>Heat pan with oil</li>
+			<li>Pour batter into 3" circles</li>
+			<li>Flip after a minute</li>
+			<li>Remove from pan</li>
+			<li>Add butter and maple syrup</li>
+		</ol>
 
 		<!-- STEP 3: Build a Definition List -->
 		<h2>Definition List</h2>
+		<dl>
+			<dt>Toad</dt>
+			<dd>A small, round, warty amphibian</dd>
+			<dt>Frog</dt>
+			<dd>A mediun sized slimy green amphibian</dd>
+			<dt>Bear</dt>
+			<dd>A large, fuzzy black, brown, or white furred mammal</dd>
+		</dl>
 
 		<!-- STEP 4: Build a nested list -->
 		<h2>Nested Lists</h2>
+		<ul>
+			<li>Frog</li>
+				<ul>
+					<li>Leopard Frog</li>
+					<li>Bullfrog</li>
+					<li>Treefrog</li>
+						<ul>
+							<li>Gray Treefrog</li>
+							<li>Red eyed Treefrog</li>
+							<li>Glassfrog</li>
+						</ul>
+				</ul>
+			<li>Toad</li>
+			<li>Bear</li>
+				<ul>
+					<li>Brown Bear</li>
+					<li>Black Bear</li>
+					<li>Grizzly Bear</li>
+					<li>Polar Bear</li>
+				</ul>
+		</ul>
 
 	</main>
 	<footer>

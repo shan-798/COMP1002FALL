@@ -14,11 +14,13 @@ html {
 
 /* STEP 12: Comment out all colored borders, and put a background-color on the below NAV element */
 nav {
-    
-    
+        border: 1px solid blue; 
+
 }
 /* STEP 1: Outline elements to help with styling (NAV, UL, LI, and A) */
 nav ul {
+        border: 2px dotted greenyellow;
+
     
     /* STEP 2: Turn off list markers */
     
@@ -28,6 +30,8 @@ nav ul {
     
 }
 nav li {
+        border: 2px  red;
+
     
     /* STEP 4: Set the 1st-level LI element to render horizontally */
     
@@ -42,14 +46,14 @@ nav li ul {
     /* STEP 11: Set a consistent width on the 2nd-level UL (15em or so) */
     
     /* STEP 15: Add a top colored border to the 2nd-level UL to make it look like it is part of the navigation bar */
-    border-top: 5px solid darkorange;
+    /* border-top: 5px solid darkorange; */
 }
 /* STEP 5: Arrange the 2nd-level list items vertically again */
 nav li li {
     
 }
 nav li a {
-    
+    background-color: lightblue;
     /* STEP 10: Set anchors to function as full-width clickable bars with display: block */
     
 }
@@ -73,7 +77,7 @@ nav a:hover {
     
 }
 nav a:active {
-    
+    border-bottom-style:
 }
 
 
