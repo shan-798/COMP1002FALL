@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support</title>
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Support</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">About</a></li>
+          <li><a href="rate.html">Rate</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- support info -->
+    <section class="support-info">
+      <h2>Need Help?</h2>
+      <p>If you have questions, concerns, or need assistance, please reach out using the form below.
+        Our support team will respond within a few minutes.</p>
+    </section>
+
+    <section class="support-form">
+      <h2>Contact Support</h2>
+      <form action="submit_support.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="issue">Issue Type:</label><br>
+        <select id="issue" name="issue" required>
+          <option value="">Select</option>
+          <option value="general">General Inquiry</option>
+          <option value="technical">Technical Support</option>
+          <option value="billing">Billing</option>
+        </select><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+
+    <footer>
+      <p><small>© National War Society | View Our Corporate Information <a href="corporate.html">Here</a> | Grenade
+          image from <a href="https://cat-uxo.com/explosive-hazards/grenades/p1-mk1-hand-grenade">Cat-Uxo</a></small>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

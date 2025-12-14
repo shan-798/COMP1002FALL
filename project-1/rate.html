@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback & Reviews</title>
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Feedback & Reviews</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--feedback form starts-->
+    <section class="feedback-form">
+      <h2>Leave Your Feedback</h2>
+      <form action="submit_feedback.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating" required>
+          <option value="">Select</option>
+          <option value="5">Fantastic!</option>
+          <option value="4">Superb!</option>
+          <option value="3">Average</option>
+          <option value="2">Meh..</option>
+          <option value="1">Abysmal!</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+    <!--customer ratings/feedback form ends-->
+    <section class="reviews">
+      <h2>Hear what our customers think!</h2>
+      <div class="review">
+        <p><strong>Alex</strong> – ★★★★★</p>
+        <p><em>“Excellent quality and fast shipping! Blew my roof straight off!”</em></p>
+      </div>
+      <div class="review">
+        <p><strong>Jordan</strong> – ★★★★☆</p>
+        <p><em>“Great product, though it is heavier than expected.”</em></p>
+      </div>
+      <div class="review">
+        <p><strong>Taylor</strong> – ★★★★☆</p>
+        <p><em>“Perfect for Christmas! Will be recommending to friends and family!”</em></p>
+      </div>
+    </section>
+
+    <footer>
+      <p><small>© National War Society | View Our Corporate Information <a href="corporate.html">Here</a> | Grenade
+          image from <a href="https://cat-uxo.com/explosive-hazards/grenades/p1-mk1-hand-grenade">Cat-Uxo</a></small>
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>
